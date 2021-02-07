@@ -1,0 +1,19 @@
+.burger {
+  position: absolute;
+  top: -48px;
+  right: 0;
+  padding: 0;
+  margin: 0;
+  color: $text-head;
+  background-color: transparent;
+  border: none;
+
+  &:hover,
+  &:focus {
+    color: $pink;
+  }
+
+  &:active {
+    color: $down-mobile;
+  }
+}

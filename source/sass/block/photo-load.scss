@@ -1,0 +1,45 @@
+.photo-load__slogan {
+  padding: 41px 0 42px 0;
+  margin: 0 auto;
+  width: 254px;
+
+  line-height: 30px;
+  text-align: center;
+}
+
+.photo-load__slogan-position {
+  display: block;
+}
+
+.photo-load__send {
+  padding-top: 20px;
+}
+
+@media ($tablet) {
+  .photo-load__slogan {
+    padding: 65px 0 69px 0;
+    width: 425px;
+    font-size: 18px;
+  }
+
+  .photo-load__send {
+    padding-top: 57px;
+    padding-bottom: 13px;
+  }
+}
+
+@media ($desktop) {
+  .photo-load {
+    padding-bottom: 26px;
+  }
+
+  .photo-load__slogan {
+    padding: 59px 0 66px 0;
+  }
+
+  .photo-load__send {
+    padding-bottom: 57px;
+    margin: 0 auto;
+    max-width: 940px;
+  }
+}

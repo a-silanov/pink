@@ -1,0 +1,182 @@
+.promo {
+  text-align: center;
+}
+
+.promo__slogan {
+  padding: 0;
+  padding-top: 23px;
+  margin: 0 auto;
+  width: 225px;
+  line-height: 29px;
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.promo__image {
+  padding-top: 27px;
+  margin-left: -62px;
+  margin-bottom: -7px;
+}
+
+.promo__inner {
+  background-color: $asphalt;
+}
+
+.promo__download {
+  margin: 0 auto;
+  padding: 29px 21px 30px 19px;
+  width: 280px;
+  text-align: center;
+  background-color: $asphalt;
+}
+
+.promo__link {
+  display: block;
+  padding: 17px 24px 15px 27px;
+  width: 222px;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 700;
+  color: $text-head;
+  border: 2px solid $text-head;
+  border-radius: 100px;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: $pink;
+    background-color: $text-head;
+  }
+
+  &:active {
+    color: $down-mobile;
+    background-color: $text-head;
+  }
+}
+
+.promo__list {
+  margin: 33px 0 11px 0;
+}
+
+.promo__text {
+  padding-top: 8px;
+  padding-left: 20px;
+  margin: 0;
+  width: 240px;
+  font-weight: 300;
+}
+
+@media ($tablet) {
+  .promo {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+  }
+
+  .promo__inner {
+    background-color: transparent;
+  }
+
+  .promo__slogan {
+    padding-top: 94px;
+    margin: 0;
+    margin-left: 58px;
+    font-size: 40px;
+    line-height: 48px;
+    z-index: 1;
+  }
+
+  .promo__image {
+    position: absolute;
+    display: block;
+    top: 74px;
+    right: 7px;
+    padding: 0;
+    margin: 0;
+    width: 517px;
+    height: 545px;
+    z-index: -1;
+  }
+
+  .promo__download {
+    padding: 35px 20px 125px 20px;
+    margin-left: 0;
+    background-color: transparent;
+    z-index: 1;
+  }
+
+  .promo__link {
+    padding: 18px 38px 15px 36px;
+    width: 220px;
+    margin-top: -6px;
+  }
+
+  .promo__list {
+    margin: 45px 0 0 8px;
+  }
+
+  .promo__text {
+    padding-top: 31px;
+    padding-left: 0;
+    margin-left: -4px;
+    width: 308px;
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+
+@media ($desktop) {
+  .promo {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-left: 130px;
+  }
+
+  .promo__inner {
+    background-color: transparent;
+  }
+
+  .promo__slogan {
+    padding-top: 102px;
+    margin: 0;
+    margin-left: 30px;
+    width: 241px;
+    font-size: 50px;
+    line-height: 66px;
+  }
+
+  .promo__image {
+    top: 96px;
+    right: 142px;
+    width: 634px;
+    height: 645px;
+    margin-left: 20px;
+  }
+
+  .promo__download {
+    padding: 59px 20px 122px 0;
+  }
+
+  .promo__link {
+    margin-top: -18px;
+    padding: 18px 28px 16px 29px;
+    width: 237px;
+    font-size: 21px;
+  }
+
+  .promo__list {
+    margin: 66px 0 0 8px;
+  }
+
+  .promo__text {
+    padding-top: 54px;
+    padding-left: 0;
+    margin-left: -4px;
+    width: 308px;
+    font-size: 18px;
+    line-height: 24px;
+    padding-bottom: 8px;
+  }
+}

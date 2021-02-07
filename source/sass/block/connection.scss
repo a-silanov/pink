@@ -1,0 +1,162 @@
+.connections {
+  position: relative;
+  background-color: $text-head;
+  z-index: 1;
+}
+
+.connections__wrapper {
+  text-align: center;
+}
+
+.connections__question,
+.connections__link {
+  padding: 0;
+  margin: 0;
+  font-size: 24px;
+  font-weight: 300;
+  text-decoration: none;
+}
+
+.connections__question {
+  padding-top: 42px;
+  line-height: 29px;
+  margin-top: -4px;
+}
+
+.connections__list {
+  padding: 0;
+  padding-top: 33px;
+  margin: 0;
+  list-style: none;
+}
+
+.connections__item {
+  &:nth-child(1) {
+    padding-bottom: 21px;
+  }
+
+  &:nth-child(2) {
+    padding-bottom: 26px;
+  }
+}
+
+.connections__text {
+  display: block;
+  font-size: 18px;
+}
+
+.connections__link {
+  line-height: 31px;
+  color: $pink;
+
+  &:hover,
+  &:focus {
+    color: $asphalt;
+    border-bottom: 2px solid $asphalt;
+  }
+
+  &:active {
+    color: $down-link;
+    border: none;
+  }
+}
+
+.connections__link--wrap {
+  width: 120px;
+}
+
+@media ($tablet) {
+  .connections {
+    &::after {
+      bottom: -94px;
+      height: 123px;
+    }
+  }
+
+  .connections__question {
+    padding-top: 49px;
+    margin: 0 auto;
+    width: 371px;
+    font-size: 40px;
+    line-height: 50px;
+  }
+
+  .connections__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 39px;
+  }
+
+  .connections__item {
+    padding: 0;
+    width: 211px;
+
+    &:nth-child(1) {
+      margin-right: 23px;
+    }
+
+    &:nth-child(2) {
+      padding-bottom: 43px;
+    }
+  }
+
+  .connections__text {
+    padding-bottom: 6px;
+  }
+
+  .connections__link {
+    &--margin {
+      margin-left: -15px;
+    }
+  }
+}
+
+@media ($desktop) {
+  .connections {
+    &::after {
+      bottom: -127px;
+      height: 170px;
+    }
+  }
+
+  .connections__question {
+    padding-top: 66px;
+    width: 461px;
+    font-size: 50px;
+    line-height: 62px;
+  }
+
+  .connections__list {
+    justify-content: flex-start;
+    padding-top: 56px;
+  }
+
+  .connections__item {
+    padding: 0;
+    width: 211px;
+    margin-top: -6px;
+
+    &:nth-child(1) {
+      margin-right: 23px;
+      margin-left: 45px;
+    }
+
+    &:nth-child(2) {
+      margin-left: 108px;
+      order: 1;
+    }
+
+    &:nth-child(3) {
+      margin-left: 86px;
+    }
+  }
+
+  .connections__text {
+    padding-bottom: 23px;
+  }
+
+  .connections__link {
+    line-height: 27px;
+  }
+}

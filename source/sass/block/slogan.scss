@@ -1,0 +1,11 @@
+.slogan {
+  margin: 0 auto;
+  line-height: 30px;
+  text-align: center;
+}
+
+@media ($tablet) {
+  .slogan {
+    font-size: 18px;
+  }
+}

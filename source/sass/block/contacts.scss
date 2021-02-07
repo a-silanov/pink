@@ -1,0 +1,28 @@
+.contacts__link {
+  display: block;
+  color: $asphalt;
+
+  &:hover,
+  &:focus {
+    color: $pink;
+  }
+
+  &:active {
+    opacity: 0.3;
+    color: $asphalt;
+  }
+}
+
+.contacts__logo-desktop {
+  display: none;
+}
+
+@media ($desktop) {
+  .contacts__logo-mobile {
+    display: none;
+  }
+
+  .contacts__logo-desktop {
+    display: block;
+  }
+}
